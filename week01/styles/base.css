@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    color: white;
+    background-color: blue;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    color: white;
+    background-color: #262626;
+    padding: 1rem;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navigation li {
+    flex: auto;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.navigation a:hover {
+    color: yellow;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template: 1fr / auto auto;
+    max-width: 2000px;
+    margin: auto;
+    column-gap: 10px;
+    padding: 1rem;
+}
+
+.card {
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+.card h2 {
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    background-color: blue;
+    border-radius: 10px 10px 0 0;
+}
+
+#left {
+    grid-column: 1 / 3;
+}
+
+#leftcontent1 {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+#leftcontent1 p {
+    margin-right: 10px;
+}
+
+#leftcontent1 img {
+    width: 100px;
+    height: auto;
+}
+
+#leftcontent2 {
+    display: grid;
+    grid-template: auto auto / auto;
+    padding: 1rem;
+    padding-right: 200px;
+}
+
+#leftcontent2heading {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid gray;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#leftcontent2other {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+figure {
+    margin-right: 30px;
+}
+
+#leftcontent2other img {
+    width: 100px;
+    height: auto;
+}
+
+figcaption {
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+}
+
+#right {
+    grid-column: 3 / 4;
+}
+
+.rightlinks {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.rightlinks li {
+    line-height: 1.5;
+}
+
+.rightlinks a:hover {
+    font-weight: bold;
+    color: lightblue;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: blue;
+    padding: 1rem;
+}
+
+#footercopy {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 0.5rem;
+}
