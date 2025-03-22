@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: red;
+    padding: 1.5rem;
+}
+
+main {
+    background-color: navy;
+    color: white;
+    padding-top: 1rem;
+    margin-bottom: -4px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.callout-data,
+.callout-weather {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#callout-data,
+#callout-weather {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#callout-data {
+    padding-top: 1rem;
+}
+
+td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.callout-data {
+    border-bottom: 1px solid rgba(0, 0, 128, 0.2);
+}
+
+.callout-data-header,
+.callout-weather-header {
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.callout-data-row-label,
+.callout-weather-row-label {
+    font-weight: bold;
+    text-align: right;
+}
+
+.callout-data-row-value,
+.callout-weather-row-value {
+    padding-left: 0.5rem;
+}
+
+.callout-weather-emoticon {
+    width: 150px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0.5rem 2rem 0.5rem;
+    background-color: red;
+}
+
+#footercopy {
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 0.5rem;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blake Ostler | WDD 131 - Country Page</title>
+    <meta name="description" content="Country page with image, data, and weather">
+    <meta name="author" content="Blake Ostler">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-media-query-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>United States of America</h1>
+    </header>
+    <main>
+        <div class="hero-callouts">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/eagle-large.webp" media="(min-width: 500px)">
+                    <img src="images/eagle-close.webp" alt="Eagle close-up" width="400" height="200">
+                </picture>
+            </div>
+            <div class="callouts">
+                <div class="callout-data">
+                    <div class="callout-data-header">Data</div>
+                    <table id="callout-data">
+                        <tbody>
+                            <tr>
+                                <td class="callout-data-row-label">Area: </td>
+                                <td class="callout-data-row-value"><span id="area"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="callout-data-row-label">Population: </td>
+                                <td class="callout-data-row-value"><span id="population"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="callout-data-row-label">Capital: </td>
+                                <td class="callout-data-row-value"><span id="capital"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="callout-data-row-label">Language: </td>
+                                <td class="callout-data-row-value"><span id="language"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="callout-data-row-label">Currency: </td>
+                                <td class="callout-data-row-value"><span id="currency"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="callout-data-row-label">Time Zone: </td>
+                                <td class="callout-data-row-value"><span id="timezone"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="callout-data-row-label">Calling Code: </td>
+                                <td class="callout-data-row-value"><span id="callingcode"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="callout-data-row-label">Internet TLD: </td>
+                                <td class="callout-data-row-value"><span id="internettld"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="callout-weather">
+                    <div id="callout-weather-header-emoticon-container">
+                        <div class="callout-weather-header">Weather</div>
+                        <div class="callout-weather-emoticon">
+                            <img src="images/sunny-temperature-icon.svg" alt="Sunny weather icon">
+                        </div>
+                    </div>
+                    <table id="callout-weather">
+                        <tbody>
+                            <tr>
+                                <td class="callout-weather-row-label">Temperature: </td>
+                                <td class="callout-weather-row-value"><span id="temperature"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="callout-weather-row-label">Conditions: </td>
+                                <td class="callout-weather-row-value"><span id="conditions"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="callout-weather-row-label">Wind: </td>
+                                <td class="callout-weather-row-value"><span id="wind"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="callout-weather-row-label">Wind Chill: </td>
+                                <td class="callout-weather-row-value"><span id="windchill"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="footercopy">&copy;<span id="currentyear"></span> | Blake Ostler | U.S.A.</p>
+        <p id="footerlastmod">Last modification: <span id="currentdatetime"></span></p>
+    </footer>
+</body>
+</html>
