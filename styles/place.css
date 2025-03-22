@@ -1,3 +1,8 @@
+:root {
+    --top-bottom-color: red;
+    --main-background-color: navy;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +15,12 @@ body {
 h1 {
     color: white;
     text-align: center;
-    background-color: red;
+    background-color: var(--top-bottom-color);
     padding: 1.5rem;
 }
 
 main {
-    background-color: navy;
+    background-color: var(--main-background-color);
     color: white;
     padding-top: 1rem;
     margin-bottom: -4px;
@@ -86,7 +91,7 @@ td {
 footer {
     text-align: center;
     padding: 1rem 0.5rem 2rem 0.5rem;
-    background-color: red;
+    background-color: var(--top-bottom-color);
 }
 
 #footercopy {
