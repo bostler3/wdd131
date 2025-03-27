@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", helvetica, sans-serif;
+    padding: 5%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: 0.85rem;
+    padding: 0.2rem;
+}
+
+th {
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+
+th,
+td {
+    padding: 0.5em 1rem;
+    text-align: center;
+}
+
+td {
+    border: 1px solid lightgray;
+}
+
+.col-header {
+    background-color: gray;
+}
+
+tbody tr:nth-child(even) {
+    background-color: gainsboro;
+}

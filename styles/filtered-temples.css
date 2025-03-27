@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header,
+footer {
+    color: white;
+    background-color: blue;
+}
+
+nav {
+    padding: 1rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+}
+
+.navigation li:first-child {
+    padding: 1rem;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.navigation a {
+    display: none;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+}
+
+.navigation a:hover {
+    color: black;
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+#menu {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    align-items: center;
+    top: 1.1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    max-width: 905px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-gap: 25px;
+    place-items: center
+}
+
+.card {
+    background-color: lightgray;
+}
+
+.cardHeader {
+    padding: 1rem;
+    text-align: center;
+}
+
+.cardInfo {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.label {
+    font-size: 0.85rem;
+    display: inline-block;
+    color: purple;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    padding: 0.75rem;
+}
+
+footer {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#footercopy {
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 0.5rem;
+}

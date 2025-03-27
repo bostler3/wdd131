@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", helvetica, sans-serif;
+}
+
+h1 {
+    padding: 1rem;
+    border-bottom: 1px solid #bbb;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #eee;
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+th,
+td {
+    padding: 0.75em;
+    text-align: center;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+.col-header {
+    background-color: gray;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ace;
+}
