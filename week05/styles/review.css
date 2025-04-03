@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    width: 50vw;
+}
+
+header,
+footer {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+main {
+    color: black;
+    background-color: #daedf4;
+}
+
+#confirm {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#footercopy {
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 0.5rem;
+}
