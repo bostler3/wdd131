@@ -1,0 +1,401 @@
+:root {
+    --main-background-color: #F4F5F4;
+    --theme-text-color: #CFAB38;
+    --gryffindor-text-color: #AE0001;
+    --gryffindor-accent-color: #EEBA35;
+    --slytherin-text-color: #0E5B51;
+    --slytherin-accent-color: #A2A2A2;
+    --ravenclaw-text-color: #0B5A89;
+    --ravenclaw-accent-color: #A2ABB2;
+    --hufflepuff-text-color: black;
+    --hufflepuff-accent-color: #ECAF1F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--main-background-color);
+}
+
+header,
+footer {
+    color: var(--theme-text-color);
+    background-color: black;
+    text-align: center;
+    font-family: "Inknut Antiqua", serif;
+}
+
+nav {
+    padding: 1rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.image-text-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-header-text {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-image {
+    margin-right: 1.25rem;
+    width: 54px;
+    height: 57.6px;
+}
+
+.nav-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-options a {
+    display: none;
+    text-decoration: none;
+    text-align: center;
+    color: var(--theme-text-color);
+    padding: 0.5rem;
+}
+
+.nav-options a:hover {
+    color: black;
+    font-weight: bold;
+    background-color: var(--main-background-color);
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.filter-options a {
+    display: none;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 0.5rem;
+}
+
+.filter-options a:hover {
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+#menu,
+#filter-menu {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    align-items: center;
+}
+
+/* Location of nav menu button */
+#menu {
+    top: 0.9rem;
+    right: 1rem;
+}
+
+/* Location of filter options menu button */
+#filter-menu {
+    top: 26rem;
+    right: 1rem;
+}
+
+#menu::before,
+#filter-menu::before {
+    content: "=";
+    font-size: 125%;
+}
+
+#menu.open::before,
+#filter-menu.open::before {
+    content: "X";
+    font-size: 125%;
+}
+
+.open a {
+    display: block;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.callout-data {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.callout-data-header {
+    font-weight: bold;
+    font-size: 130%;
+    padding-bottom: 0.5rem;
+    color: black;
+}
+
+.callout-data-subheader {
+    color: black;
+}
+
+.cardImage img {
+    width: 100%;
+    height: auto;
+}
+
+#gryffindor,
+#gryffindor-radio-label {
+    color: var(--gryffindor-text-color);
+}
+
+#gryffindor:hover {
+    background-color: var(--gryffindor-accent-color);
+}
+
+#ravenclaw,
+#ravenclaw-radio-label {
+    color: var(--ravenclaw-text-color);
+}
+
+#ravenclaw:hover {
+    background-color: var(--ravenclaw-accent-color);
+}
+
+#hufflepuff:hover {
+    background-color: var(--hufflepuff-accent-color);
+}
+
+#slytherin,
+#slytherin-radio-label {
+    color: var(--slytherin-text-color);
+}
+
+#slytherin:hover {
+    background-color: var(--slytherin-accent-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+#pageLabelHeading {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.card {
+    text-align: center;
+    padding: 0.75rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 85%;
+    padding: 0.75rem;
+}
+
+footer p {
+    padding: 0;
+    line-height: 2;
+}
+
+.footer-nav-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding-bottom: 2rem;
+}
+
+.footer-nav-options li {
+    border-right: 1px solid var(--main-background-color);
+}
+
+.footer-nav-options li:last-child {
+    border-right: none;
+}
+
+.footer-nav-options a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--theme-text-color);
+    padding: 0.5rem;
+}
+
+.footer-nav-options a:hover {
+    color: var(--theme-text-color);
+    font-weight: bold;
+    background-color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
+hr {
+    height: 0.5px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    border: none;
+    border-top: 1px solid var(--main-background-color);
+}
+
+/* Owl Post */
+
+#form-heading h2 {
+    display: none;
+}
+
+#form-heading p {
+    text-align: center;
+    font-size: 80%;
+}
+
+form {
+    margin-top: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.form label,
+.sorting-hat-form label {
+    display: block;
+    padding-top: 1rem;
+    font-weight: bold;
+    max-width: 400px;
+}
+
+#select-label {
+    display: inline;
+}
+
+.form select,
+input[type="text"] {
+    display: inline;
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 280px;
+}
+
+.form select {
+    margin-left: 30px;
+}
+
+input[type="text"] {
+    margin-left: 15px;
+}
+
+.name-field label {
+    display: inline;
+}
+
+.name-field {
+    padding-top: 1rem;
+}
+
+.house-radio label {
+    padding: 0;
+    padding-bottom: 5px;
+    font-weight: normal;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    width: 19px;
+    height: 19px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 750px;
+}
+
+.textareaResponse {
+    font-family: "Estonia", sans-serif;
+    font-size: 175%;
+    font-weight: bold;
+    padding: 0.75rem;
+}
+
+.label-header {
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+input[type="submit"] {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 750px;
+    height: 45px;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+#hogwarts-house {
+    font-weight: normal;
+}
+
+/* Sorting Hat */
+
+#quiz-form-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#quiz-form-heading-text {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+#quiz-form-heading img {
+    width: 160px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* References */
+
+ol {
+    /* Got help from a Bing search for "reset ol style to default css" */
+    list-style-type: decimal;
+    margin-left: 1em;
+    padding: 1rem 1rem 1rem 40px;
+}
+
+ol li:not(:first-of-type) {
+    /* Got help from here for spacing the list items: https://www.geeksforgeeks.org/how-to-set-vertical-space-between-the-list-of-items-using-css/ */
+    padding-top: 0.75rem;
+}
+
+ol li:not(:last-of-type) {
+    padding-bottom: 0.75rem;
+}

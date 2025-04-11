@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blake Ostler | WDD 131 - Website Assignment - Harry Potter Fun - Owl Post</title>
+    <meta name="description" content="A form to write a letter to a Harry Potter character">
+    <meta name="author" content="Blake Ostler">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&family=Inknut+Antiqua&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <button id="menu" title="Menu button"></button>
+        <nav>
+            <div class="navigation">
+                <div class="image-text-container">
+                    <a href="index.html"><img src="images/logo.jpg" alt="Harry Potter icon" width="90" height="96"
+                            class="logo-image"></a>
+                    <h1 class="nav-header-text">Harry Potter Fun</h1>
+                </div>
+                <ul class="nav-options">
+                    <li><a href="index.html" id="characters-header-nav-link">Characters</a></li>
+                    <li><a href="sorting-hat.html" id="sorting-hat-header-nav-link">Sorting Hat</a></li>
+                    <li><a href="owl-post.html" id="owl-post-header-nav-link">Owl Post</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-callouts">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero-large.webp" media="(min-width: 480px)">
+                    <img src="images/hero-small.webp" alt="Hero image" width="400" height="200">
+                </picture>
+            </div>
+            <div class="callouts">
+                <div class="callout-data">
+                    <div class="callout-data-header">
+                        <h2>Owl Post</h2>
+                    </div>
+                    <div class="callout-data-subheader">Write a letter to a Harry Potter character!</div>
+                </div>
+            </div>
+        </div>
+        <div id="form-heading">
+            <h2>USE OWL POST TO SEND A LETTER</h2>
+            <p>(* Required field)</p>
+        </div>
+        <form method="get" class="form" onsubmit="showAck(event)">
+            <label for="toCharacters" id="select-label">To:*</label>
+            <select name="toCharacters" id="toCharacters" onchange="updateSelectedCharacter()" required>
+                <option value="" id="toCharacters-list-placeholder" disabled selected hidden>Choose a character ...
+                </option>
+            </select>
+            <div class="name-field">
+                <label>From:*<input type="text" name="full-name" id="full-name" placeholder="Type your name"
+                        required></label>
+            </div>
+            <div class="label-header">Which Hogwarts House are you in? <span id="hogwarts-house"></span></div>
+            <div class="house-radio">
+                <label id="gryffindor-radio-label"><input type="radio" name="house" id="gryffindor-radio"
+                        value="gryffindor">Gryffindor</label>
+                <label id="slytherin-radio-label"><input type="radio" name="house" id="slytherin-radio"
+                        value="slytherin">Slytherin</label>
+                <label id="ravenclaw-radio-label"><input type="radio" name="house" id="ravenclaw-radio"
+                        value="ravenclaw">Ravenclaw</label>
+                <label id="hufflepuff-radio-label"><input type="radio" name="house" id="hufflepuff-radio"
+                        value="hufflepuff">Hufflepuff</label>
+            </div>
+            <div class="label-header">Share one of your favorite <span id="selected-character"></span> moments!</div>
+            <div class="fav-moment">
+                <textarea name="fav-moment" id="fav-moment" class="textareaResponse" rows="8" placeholder="Type favorite moment here..."></textarea>
+            </div>
+            <div class="label-header">Letter <span id="selected-character2"></span>*</div>
+            <div class="letter">
+                <textarea name="letter" id="letter" class="textareaResponse" rows="8" placeholder="Type letter here..."></textarea>
+            </div>
+            <input type="submit" value="Mail the Letter">
+        </form>
+    </main>
+    <footer>
+        <ul class="footer-nav-options">
+            <li><a href="index.html" id="characters-footer-nav-link">Characters</a></li>
+            <li><a href="sorting-hat.html" id="sorting-hat-footer-nav-link">Sorting Hat</a></li>
+            <li><a href="owl-post.html" id="owl-post-footer-nav-link">Owl Post</a></li>
+            <li><a href="references.html" id="references-footer-nav-link">References</a></li>
+        </ul>
+        <hr>
+        <p id="footercopy">&copy;<span id="currentyear"></span> | Blake Ostler, U.S.A. and listed references<br>
+        Last modification: <span id="currentdatetime"></span></p>
+    </footer>
+</body>
+</html>

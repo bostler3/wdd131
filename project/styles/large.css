@@ -1,0 +1,167 @@
+/* Need to use image editor to make hero image shorter (shouldn't cover entire screen top to bottom)*/
+@media only screen and (min-width: 480px) {
+    .navigation {
+        flex-direction: row;
+        align-items: center;
+        color: var(--theme-text-color);
+        justify-content: space-between;
+    }
+
+    .nav-options,
+    .footer-nav-options {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .footer-nav-options {
+        justify-content: center;
+    }
+
+    .footer-nav-options li {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .nav-options a,
+    .footer-nav-options a {
+        display: block;
+        color: var(--theme-text-color);
+        text-decoration: none;
+    }
+
+    .nav-options a:hover {
+        color: var(--theme-text-color);
+        background-color: black;
+        text-decoration: underline;
+        text-decoration-thickness: 5px;
+    }
+
+    .filter-options {
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .filter-options a {
+        display: block;
+        text-decoration: none;
+    }
+
+    .filter-options a:hover {
+        color: black;
+        background-color: var(--main-background-color);
+        text-decoration: underline;
+        text-decoration-thickness: 5px;
+    }
+
+    #gryffindor:hover {
+        background-color: var(--main-background-color);
+        text-decoration-color: var(--gryffindor-accent-color);
+    }
+
+    #ravenclaw:hover {
+        background-color: var(--main-background-color);
+        text-decoration-color: var(--ravenclaw-accent-color);
+    }
+
+    #hufflepuff:hover {
+        background-color: var(--main-background-color);
+        text-decoration-color: var(--hufflepuff-accent-color);
+    }
+
+    #slytherin:hover {
+        background-color: var(--main-background-color);
+        text-decoration-color: var(--slytherin-accent-color);
+    }
+
+    #menu,
+    #filter-menu {
+        display: none;
+    }
+
+    .hero-callouts {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+    }
+
+    .hero {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .callouts {
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .callout-data {
+        padding-top: 2rem;
+        width: 600px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .callout-data-header,
+    .callout-data-subheader {
+        font-size: 150%;
+        color: var(--theme-text-color);
+    }
+
+    .callout-data-header {
+        padding-bottom: 1rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+        grid-gap: 25px;
+        align-items: end;
+    }
+
+    hr {
+        width: 12.5%;
+    }
+
+    /* Sorting Hat */
+
+    #quiz-form-heading {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    #quiz-form-heading img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #quiz-form-heading-text {
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 11rem;
+    }
+
+    /* Owl Post */
+
+    #form-heading {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    #form-heading h2 {
+        display: block;
+        padding-bottom: 0.5rem;
+    }
+
+    .form {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}

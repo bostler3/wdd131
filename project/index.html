@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blake Ostler | WDD 131 - Website Assignment - Harry Potter Fun - Characters</title>
+    <meta name="description" content="Harry Potter character image gallery with responsive behavior, a hamburger menu and filtering capability">
+    <meta name="author" content="Blake Ostler">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <button id="menu" title="Menu button"></button>
+        <nav>
+            <div class="navigation">
+                <div class="image-text-container">
+                    <a href="#"><img src="images/logo.jpg" alt="Harry Potter icon" width="90" height="96" class="logo-image"></a>
+                    <h1 class="nav-header-text">Harry Potter Fun</h1>
+                </div>
+                <ul class="nav-options">
+                    <li><a href="index.html" id="characters-header-nav-link">Characters</a></li>
+                    <li><a href="sorting-hat.html" id="sorting-hat-header-nav-link">Sorting Hat</a></li>
+                    <li><a href="owl-post.html" id="owl-post-header-nav-link">Owl Post</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-callouts">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero-large.webp" media="(min-width: 480px)">
+                    <img src="images/hero-small.webp" alt="Hero image" width="400" height="200">
+                </picture>
+            </div>
+            <div class="callouts">
+                <div class="callout-data">
+                    <div class="callout-data-header">
+                        <h2>Characters</h2>
+                    </div>
+                    <div class="callout-data-subheader">Learn about many of the Harry Potter characters!</div>
+                </div>
+            </div>
+        </div>
+        <button id="filter-menu" title="Filter menu button"></button>
+        <ul class="filter-options">
+            <li><a href="#" id="all">All</a></li>
+            <li><a href="#" id="males">Males</a></li>
+            <li><a href="#" id="females">Females</a></li>
+            <li><a href="#" id="adults">Adults</a></li>
+            <li><a href="#" id="youth">Youth</a></li>
+            <li><a href="#" id="gryffindor">Gryffindor</a></li>
+            <li><a href="#" id="ravenclaw">Ravenclaw</a></li>
+            <li><a href="#" id="hufflepuff">Hufflepuff</a></li>
+            <li><a href="#" id="slytherin">Slytherin</a></li>
+        </ul>
+        <div id="pageLabelHeading">
+            <h2><span id="pageLabel"></span></h2>
+        </div>
+        <div class="container">
+        </div>
+    </main>
+    <footer>
+        <ul class="footer-nav-options">
+            <li><a href="index.html" id="characters-footer-nav-link">Characters</a></li>
+            <li><a href="sorting-hat.html" id="sorting-hat-footer-nav-link">Sorting Hat</a></li>
+            <li><a href="owl-post.html" id="owl-post-footer-nav-link">Owl Post</a></li>
+            <li><a href="references.html" id="references-footer-nav-link">References</a></li>
+        </ul>
+        <hr>
+        <p id="footercopy">&copy;<span id="currentyear"></span> | Blake Ostler, U.S.A. and listed references<br>
+            Last modification: <span id="currentdatetime"></span></p>
+    </footer>
+</body>
+</html>
