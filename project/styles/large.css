@@ -1,4 +1,4 @@
-/* Need to use image editor to make hero image shorter (shouldn't cover entire screen top to bottom)*/
+/* Idea: maybe need to use image editor to make hero image shorter (perhaps shouldn't cover entire screen top to bottom) */
 @media only screen and (min-width: 480px) {
     .navigation {
         flex-direction: row;
